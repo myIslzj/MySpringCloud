@@ -10,6 +10,7 @@ import lombok.NoArgsConstructor;
 public class Payment {
 
     private int id;
-    private String serial;
+    private String  serial;
+    private String  test1;
 
 }
