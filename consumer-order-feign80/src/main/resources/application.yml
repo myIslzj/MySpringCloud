@@ -1,0 +1,15 @@
+server:
+  port: 80
+
+eureka:
+  client:
+    register-with-eureka: false  #是否将自己注册到 eureka server
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/
+
+ribbon:  #设置openfeign超时时间
+  ReadTimeout: 5000  #建立连接等待时间（5秒）
+  ConnectTimeout: 5000  #建立连接后读取资源的时间（5秒）
+logging:
+  level:
+    com.lzj.service.PaymentFeignService: debug  #feign以什么级别监控哪个接口
