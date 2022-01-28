@@ -10,6 +10,8 @@ import lombok.NoArgsConstructor;
 public class Payment {
 
     private int id;
-    private String  serial;
+    private String serial;
+
+    private String main = "主干创建";
 
 }
