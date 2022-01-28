@@ -14,5 +14,6 @@ public class Payment {
     private String main = "主干创建";
     private String branch = "分支创建";
     private String github = "github创建";
+    private String sshupd = "SSH方式更新";
 
 }
